@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+.ng-invalid:not(form){
+    border-left: 3px solid rgb(174, 8, 8);
+}
+
+
+.ng-valid:not(form){
+    border-left: 3px solid rgb(2, 193, 2)
+}
+
+.title{
+    text-align: center;
+
+}
+button{ 
+    color: white;
+    background-image: url('https://miro.medium.com/v2/resize:fit:1100/format:webp/1*uOlYH9KOordU2XgVsxR1GQ.jpeg');
+}

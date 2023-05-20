@@ -1,0 +1,17 @@
+
+<div class="topnav">
+    
+    <a class="active">Company Crm </a>
+    
+  <div>
+    <a *ngIf="loggedIn()" routerLink="/customers">customers</a>
+    <a *ngIf="loggedIn()" routerLink="/employees">employees</a>
+    </div>
+    <div class="topnav-right">
+        
+      <a routerLink="/register">Register</a>
+      <a *ngIf="!loggedIn()" routerLink="/login">Login</a>
+      <a *ngIf="loggedIn()"(click)="logOut()" routerLink="/logout">LogOut</a>
+
+    </div>
+  </div>

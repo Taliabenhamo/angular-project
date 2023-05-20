@@ -1,0 +1,29 @@
+<div class=" text-center mt-5">
+  <img src="https://www.k2e.com/wp-content/uploads/2020/05/CRM_Importance-300x210.png" alt="CRM">
+  <h6>Register</h6>
+  <div class="row text-center border-3px">
+    <div class="col-md-4 offset-md-4 mt-4">
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input formControlName="name" type="text" name="name" class="form-control" id="name"
+            placeholder="Enter name" />
+        </div>
+        <app-field-error [formField]="getFieldControl('name')"></app-field-error>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input formControlName="email" type="emai" name="email" class="form-control" id="email" placeholder="Email" />
+        </div>
+        <app-field-error [formField]="getFieldControl('email')"></app-field-error>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input formControlName="password" type="password" name="password" class="form-control" id="password"
+            placeholder="Password" />
+        </div>
+        <app-field-error [formField]="getFieldControl('password')"></app-field-error>
+        <button type="submit" [disabled]="signupForm.invalid" class="btn btn-primary mt-4 col-6">Register</button>
+      </form>
+    </div>
+  </div>

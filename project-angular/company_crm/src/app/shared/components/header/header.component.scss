@@ -1,0 +1,35 @@
+.topnav {
+  // background: linear-gradient(110deg, #3fffd9 60%, #875d8e 60%);
+  background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('https://miro.medium.com/v2/resize:fit:1100/format:webp/1*uOlYH9KOordU2XgVsxR1GQ.jpeg');
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: 'Instrument Serif', serif;;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  
+  background-color: #d47373be;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+ 
+  color: rgb(255, 255, 255);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
